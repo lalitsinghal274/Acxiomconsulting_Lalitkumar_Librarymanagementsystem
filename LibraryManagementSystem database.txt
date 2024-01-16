@@ -1,0 +1,22 @@
+create database library;
+use library;
+
+create table admin(name varchar(40), uid varchar(40), upass varchar(40));
+insert into admin values("Lalit","lalitsinghal000@gmail.com","Lalit@123");
+select * from admin;
+
+create table user(id varchar(25),name varchar(25),uid varchar(25),upass varchar(25));
+insert into user values("20ce070","ankit","ankitjangra7090@gmail.com","Ankit@123");
+select * from user;
+
+create table Books(btitle varchar(50), blanguage varchar(40), bauthor varchar(50), bavailable int);
+insert into Books values("C++","English","Bjarne Stroustrup",4);
+select * from Books;
+
+create table issuebook(btitle varchar(25), id varchar(25),issuebook varchar(40), returnbook varchar(40));
+insert into issuebook values("java","20ce056","10-june-2023","25-june-2023");
+select * from issuebook;
+Delete from issuebook where btitle="java";
+
+update admin set name="keshav Bhartiwal",uid="keshav00@gmail.com", upass="keshav@123" where uid="keshav000@gmail.com";
+
